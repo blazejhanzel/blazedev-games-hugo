@@ -25,9 +25,15 @@ jobs:
           hugo-version: 'latest'
       - name: 🔨 Build
         run: hugo --minify
+      - name: 🌎 Setup Pages
+        uses: actions/configure-pages@v5
+      - name: 📂 Upload files
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist/'
   deploy:
     environment:
-      name: Build
+      name: Deploy
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     permissions:
