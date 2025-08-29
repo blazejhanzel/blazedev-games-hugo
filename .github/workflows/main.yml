@@ -1,0 +1,41 @@
+name: 🚀 Deploy Hugo site to Pages from main branch
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    environment:
+      name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+      - name: 🧰 Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+      - name: 🔨 Build
+        run: hugo --minify
+  deploy:
+    environment:
+      name: Build
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚢 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
