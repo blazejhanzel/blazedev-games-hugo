@@ -19,9 +19,7 @@ unsafe = true
 author = "Błażej Hanzel"
 description = "Providing the feeling of old retro games using the latest technology"
 keywords = "games,developer,gamedev"
-info = ["26 years old Indie Game Developer from Poland 🇵🇱 Creator of “Astro Strike – Space Shooter” game 👾 and “Blaze Builder – Easy Multiplatform Build” Unity tool 🎮 I create cool game dev-related projects 💻 and YouTube videos 🎬 I like emojis 😄",
-  "I started my game development journey when I was 13 years old, take a part of first game dev workshop two years later, created some projects which stay sealed and finally decided to release my own game 🥳",
-  "I’m documenting my journey on Twitter/X and on YouTube, where I post everything related with game development – devlogs, tips and tutorials."]
+info = ["26 y.o. Indie Game Developer from Poland 🇵🇱", "Creator of Astro Strike 👾 and Blaze Builder 🎮", "I create #gamedev and YouTube 🎬", "Seems that I like emojis 😄"]
 avatarURL = "images/avatar.png"
 dateFormat = "2 January 2006"
 since = 2023
@@ -65,17 +63,17 @@ name = "About"
 weight = 1
 url = "about/"
 
-[[languages.en.menu.main]]
-name = "Blog"
-weight = 2
-url = "posts/"
+# [[languages.en.menu.main]]
+# name = "Blog"
+# weight = 2
+# url = "posts/"
 
-[[languages.en.menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
+# [[languages.en.menu.main]]
+# name = "Projects"
+# weight = 3
+# url = "projects/"
 
-[[languages.en.menu.main]]
-name = "Contact me"
-weight = 5
-url = "contact/"
+# [[languages.en.menu.main]]
+# name = "Contact me"
+# weight = 5
+# url = "contact/"
