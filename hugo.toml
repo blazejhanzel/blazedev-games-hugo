@@ -76,6 +76,11 @@ url = "about/"
 # url = "projects/"
 
 [[languages.en.menu.main]]
+name = "music"
+weight = 4
+url = "music/"
+
+[[languages.en.menu.main]]
 name = "contact"
 weight = 5
 url = "contact/"

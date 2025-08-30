@@ -1,0 +1,47 @@
+<style>
+  .album_cover {
+    width: calc(80% + 32px);
+    line-height: 0.5;
+    margin-bottom: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .album_cover > img{
+    width: calc(100% - 32px);
+    margin-left: 16px;
+  }
+
+  .album_info {
+    background: #343941;
+    padding: 8px 16px 8px 16px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    margin-top: 2px;
+  }
+
+  .album_title {
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .album_description {
+    font-size: 14px;
+    color: #ddd;
+    line-height: 1;
+  }
+</style>
+
+<div class="album_cover">
+  {{ with .Get "cover" }}
+    <img src="{{ . | relURL }}" alt="Album Cover">
+  {{ end }}
+  <div class="album_info">
+    <div class="album_title">{{ .Get "title" }}</div>
+    <div class="album_description">{{ .Get "description" }}</div>
+  </div>
+</div>
