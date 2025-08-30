@@ -1,0 +1,116 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container post">
+    <article>
+      {{ if .Params.featuredImage }}
+        <div style="text-align: center;">
+          <img src="{{ .Params.featuredImage }}" alt="Featured image" style="width: 640px; border-radius: min(1.5rem, 2vw)"/>
+        </div>
+      {{ end }}
+
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="{{ .Permalink | safeURL }}">
+              {{ .Title }}
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta" style="display: flex;">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+                {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+              </time>
+            </span>
+          </div>
+          {{ with .GetTerms "categories" }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+          {{ with .GetTerms "tags" }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+        </div>
+      </header>
+
+      <div class="post-content" style="width: 100%; text-align: center;">
+        <p>{{ .Description }}</p>
+        <hr>
+
+        {{ .Content }}
+
+        {{ if .Content }}
+        <hr>
+        {{ end }}
+
+        <p style="font-family: sans-serif; font-size: 2.4rem; line-height: 1.25; font-weight: 500; text-align: center;">
+          Assets are for educational purposes only. Not for commercial use.
+          <br>
+          You are permitted to use scripts however you want – MIT License.
+        </p>
+        <hr>
+
+        <div class="button-group">
+          {{ if .Params.file }}
+            <a href="{{ .Params.file }}" class="btn">
+              <i class="fa-solid fa-download"></i> Download project
+            </a>
+          {{ end }}
+          {{ if .Params.videoLink }}
+            <a href="{{ .Params.videoLink }}" class="btn" target="_blank">
+              <i class="fa-solid fa-video"></i>  Watch tutorial
+            </a>
+          {{ end }}
+        </div>
+      </div>
+
+      <footer>
+        {{ partial "posts/series.html" . }}
+        {{ partial "posts/disqus.html" . }}
+        {{ partial "posts/commento.html" . }}
+        {{ partial "posts/utterances.html" . }}
+        {{ partial "posts/giscus.html" . }}
+        {{ partial "posts/mastodon.html" . }}
+        {{ partial "posts/telegram.html" . }}
+        {{ partial "posts/cusdis.html" . }}
+      </footer>
+    </article>
+
+    {{ partial "posts/math.html" . }}
+  </section>
+  <style>
+    .button-group {
+      margin: auto;
+    }
+
+    .btn,
+    .btn:link,
+    .btn:visited,
+    .btn:hover,
+    .btn:active {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      background: #fff;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.15);
+      transition: background 0.2s, box-shadow 0.2s;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
+    .btn:hover {
+      background: #B7B7B7;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.25);
+    }
+
+    hr {
+      margin: 16px 0px 16px 0px;
+    }
+  </style>
+{{ end }}
