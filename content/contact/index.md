@@ -9,6 +9,6 @@ author = "Błażej Hanzel"
 Hello!
 To contact with me, send an email to address which is **contact@** followed by the domain of this website (anti-spam 😊).
 
-{{< imgrel src="images/contact_helper.png" alt="Contact Helper" >}}
+![Contact Helper](contact_helper.png)
 
 You can also message me on my socials.
