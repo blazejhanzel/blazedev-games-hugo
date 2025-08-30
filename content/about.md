@@ -17,3 +17,5 @@ I got into making games when I was 13, went to my first workshop at 15, built a 
 These days I’m documenting my journey on **Bluesky** and **YouTube** – with devlogs, tips, and tutorials all about game dev 🚀
 
 {{< social >}}
+
+<center><span style="font-style: italic; line-height: 1.5; font-weight: 400; font-family: Cardo; font-size: 24px">“Think outside the box!”</span></center>
