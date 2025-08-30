@@ -6,7 +6,7 @@ aliases = ["about-me"]
 author = "Błażej Hanzel"
 +++
 
-{{< avatar alt="blazeDev Avatar" style="width: 100%; height: auto;" >}}
+{{< profile_picture alt="blazeDev Profile Picture" style="width: 100%; height: auto;" >}}
 
 **Hey!** I’m Błażej, 26 y.o. indie game dev from Poland 🇵🇱  
 I made *Astro Strike – Space Shooter* 👾 and a Unity tool called *Blaze Builder – Easy Multiplatform Build* 🎮  

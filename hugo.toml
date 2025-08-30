@@ -16,10 +16,12 @@ noClasses = false
 unsafe = true
 
 [params]
-author = "Błażej Hanzel"
+author = "blazeDev Games"
+copyrights = "Błażej Hanzel"
+github = "https://github.com/blazejhanzel/"
 description = "Providing the feeling of old retro games using the latest technology"
 keywords = "games,developer,gamedev"
-info = ["26 y.o. Indie Game Developer from Poland 🇵🇱", "Creator of Astro Strike 👾 and Blaze Builder 🎮", "I create #gamedev and YouTube 🎬", "Seems that I like emojis 😄"]
+info = ["Creator of Astro Strike 👾 and Blaze Builder 🛠️", "#gamedev 🎮 #youtuber 🎬"]
 avatarURL = "images/avatar.png"
 dateFormat = "2 January 2006"
 since = 2023
