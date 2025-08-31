@@ -1,4 +1,4 @@
-baseURL = 'https://blazejhanzel.github.io/blazedev-games-hugo/'
+baseURL = 'https://blazedev.games/'
 languageCode = 'en-us'
 title = 'blazeDev Games'
 theme = "hugo-coder"
