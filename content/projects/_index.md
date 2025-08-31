@@ -14,12 +14,12 @@ Here you can find both my **games** (released and upcoming) and other gamedev **
 
 <span style="color: #b7b7b7">Check out my released projects and upcoming ones.</span>
 
-<a href="../games/astro-strike/" class="game-banner">
+<a href="astro-strike/" class="game-banner">
 {{< imgrel src="images/astro_strike/astro_strike_banner.png" alt="Astro Strike banner" >}}
 </a>
 
 <center>
-<b>Astro Strike</b> – Retro stylized space shooter game for mobile and desktop. <a href="../games/astro-strike/">More info >></a>
+<b>Astro Strike</b> – Retro stylized space shooter game for mobile and desktop. <a href="astro-strike/">More info >></a>
 </center>
 
 
