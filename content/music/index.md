@@ -15,7 +15,7 @@ This site is where I share all my playlists. I make music for fun, music jam com
 
 <hr style="width: 20%">
 
-{{< music_album_cover title="Astro Strike OST" description="Official Soundtrack from Astro Strike game" cover="images/astro_strike_banner.png" >}}
+{{< music_album_cover title="Astro Strike OST" description="Official Soundtrack from Astro Strike game" cover="images/astro_strike/astro_strike_banner.png" >}}
 {{< music_player src="Intro.mp3" title="Intro" track_number="1" author="Błażej Hanzel" year="2023" >}}
 {{< music_player src="WelcomeTheBase.mp3" title="Welcome The Base" track_number="2" author="Błażej Hanzel" year="2023" >}}
 {{< music_player src="ProtectTheEarthBeta.mp3" title="Protect The Earth (Beta)" track_number="3" author="Błażej Hanzel" year="2023" >}}
