@@ -14,7 +14,7 @@ draft = false
 Get ready to take on an intergalactic battle in Astro Strike! With your trusty drone, you’ll fight against a horde of invading aliens as they try to take over the solar system. Explore various locations, including planets and other celestial bodies, and unlock new weapons to enhance your gameplay experience. As you progress through the levels, the challenge will increase, putting your skills to the test. Will you be able to save the solar system from the alien invasion?
 
 <div style="display: flex; justify-content: center;">
-  <div style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 100%;">
+  <div style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 100%; justify-content: center;">
     <div style="text-align: center; flex: 1 1 200px; max-width: 200px;">
       <a href="Astro-Strike-Screenshot-001.png" target="_blank">
         <img src="Astro-Strike-Screenshot-001.png" alt="Astro Strike Screenshot" style="width: 100%; height: auto; border-radius: 20px;">
